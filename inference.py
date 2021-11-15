@@ -33,17 +33,12 @@ images = np.array(images, dtype=np.uint8)
 
 night_predictions = night_model.predict(images)
 precipitation_predictions = precipitation_model.predict(images)
-print(precipitation_predictions)
 fog_predictions = fog_model.predict(images)
 
 # Convert prediction to integer
-print(names)
 night_labels = night_predictions > 0.5
-print(night_labels)
 precipitation_labels = argmax(precipitation_predictions, axis=1)
-print(precipitation_labels)
 fog_labels = fog_predictions > 0.5
-print(fog_labels)
 
 # If night then precipitation is clear and fog is clear
 precipitation_labels = [0 if x == 1 else y for x,
