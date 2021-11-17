@@ -18,7 +18,7 @@ Simple CNNs with eventual Dropout trained on a sampled mix between the ACDC and 
 
 ## Setup
 - clone the repository
-- pip install requirements.txt
+- pip install -r requirements.txt
 
 ## Run
 - Put images to test in the inference_images folder
