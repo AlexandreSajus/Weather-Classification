@@ -1,22 +1,20 @@
 # Valeo Weather Classification
 Classifying street-level images according to weather to help the training of autonomous vehicles
 
-## Training dataset
-The training set used is the ACDC dataset, accuracy is over 95% on all tasks on the validation set
+![](media/acdc_example.png)
 
-We are currently creating a test set
+## Current strategy
+Simple CNNs with eventual Dropout trained on a sampled mix between the ACDC and the BDD datasets
 
-The labels are:
-- **clear**:
-![](dataset_images/acdc_clear.PNG)
-- **night**:
-![](dataset_images/acdc_night.PNG)
-- **rain**:
-![](dataset_images/acdc_rain.PNG)
-- **snow**:
-![](dataset_images/acdc_snow.PNG)
-- **fog**:
-![](dataset_images/acdc_fog.PNG)
+## Performance
+- 94.8% on day/night
+- 70.2% on clear/rain/snow
+- non evaluated on nofog/fog
+- models/version_control.txt for an accurate description of performance
+
+## Work in progress
+- increase performance on day/night using a non-ML approach
+- the low performance on precipiation is due to the inconsistent labelling in BDD (dataset_images/bdd_snow.PNG), we are currently cleaning the dataset
 
 ## Setup
 - clone the repository

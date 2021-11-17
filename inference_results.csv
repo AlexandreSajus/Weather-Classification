@@ -1,5 +1,5 @@
 name,night,precipitation,fog
 clear_example.jpg,day,clear,no fog
 night_example.jpg,night,clear,no fog
-rain_example.jpg,day,clear,no fog
-snow_example.jpg,day,clear,fog
+rain_example.jpg,day,rain,no fog
+snow_example.jpg,day,snow,fog
