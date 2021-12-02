@@ -3,18 +3,23 @@ Classifying street-level images according to weather to help the training of aut
 
 ![](media/acdc_example.png)
 
-## Current strategy
-Simple CNNs with eventual Dropout trained on a sampled mix between the ACDC and the BDD datasets
+## Strategy
+- **Day/Night**: RandomForest on average RGB and HSV values
+- **Clear/Rain/Snow**: Simple CNN with Dropout
+- **NoFog/Fog**: Simple CNN
+
+Training on a mix between two manually cleaned datasets:
+- **ACDC** ( https://acdc.vision.ee.ethz.ch/ )
+- **Berkeley DeepDrive** ( https://bdd-data.berkeley.edu/ )
 
 ## Performance
-- 94.8% on day/night
-- 70.2% on clear/rain/snow
-- non evaluated on nofog/fog
-- models/version_control.txt for an accurate description of performance
+- **Day/Night**: 97.8% accuracy ( Human Level Performance = 100% )
+- **Clear/Rain/Snow**: 92.0% accuracy ( HLP = 96% )
+- **NoFog/Fog**: Not yet evaluated
+  
+Here is the Clear/Rain/Snow confusion matrix
 
-## Work in progress
-- increase performance on day/night using a non-ML approach
-- the low performance on precipiation is due to the inconsistent labelling in BDD (dataset_images/bdd_snow.PNG), we are currently cleaning the dataset
+<img src="media/cm_precipitation.jpg" alt="cm_precipitation" width="400"/>
 
 ## Setup
 - clone the repository
