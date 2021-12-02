@@ -74,23 +74,31 @@ night_labels = night_predictions
 precipitation_labels = argmax(precipitation_predictions, axis=1)
 fog_labels = fog_predictions > 0.5
 
-# If night, then precipitation is clear and fog is clear
-precipitation_labels = [0 if x == 1 else y for x,
-                        y in zip(night_labels, precipitation_labels)]
-fog_labels = [0 if x == 1 else y for x, y in zip(night_labels, fog_labels)]
+# Result
+weather_results = []
+fog_results = []
 
-# Convert prediction to string
-night_labels = ["night" if x == 1 else "day" for x in night_labels]
-precipitation_labels = ["clear" if x == 0 else (
-    "rain" if x == 1 else "snow") for x in precipitation_labels]
-fog_labels = ["fog" if x == 1 else "no fog" for x in fog_labels]
+# Convert predictions to single label
+for i in range(images.shape[0]):
+    if night_labels[i] == 1:
+        weather_results.append("night")
+    else:
+        if precipitation_labels[i] == 0:
+            weather_results.append("clear")
+        elif precipitation_labels[i] == 1:
+            weather_results.append("rain")
+        else:
+            weather_results.append("snow")
+    if fog_labels[i] == 1:
+        fog_results.append("fog")
+    else:
+        fog_results.append("no_fog")
 
 # Save names and predictions in a dataframe
-df = pd.DataFrame(columns=['name', 'night', 'precipitation', 'fog'])
+df = pd.DataFrame(columns=['name', 'weather', 'fog'])
 df['name'] = names
-df['night'] = night_labels
-df['precipitation'] = precipitation_labels
-df['fog'] = fog_labels
+df['weather'] = weather_results
+df['fog'] = fog_results
 
 # Save dataframe as csv
 df.to_csv('inference_results.csv', index=False)

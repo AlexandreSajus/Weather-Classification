@@ -1,5 +1,6 @@
-name,night,precipitation,fog
-clear_example.jpg,day,clear,no fog
-night_example.jpg,night,clear,no fog
-rain_example.jpg,day,rain,no fog
-snow_example.jpg,day,snow,fog
+name,weather,fog
+clear_example.jpg,clear,no_fog
+fog_example.jpg,rain,fog
+night_example.jpg,night,no_fog
+rain_example.jpg,rain,no_fog
+snow_example.jpg,snow,fog
