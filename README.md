@@ -15,7 +15,7 @@ Training on a mix between two manually cleaned datasets:
 ## Performance
 - **Day/Night**: 97.8% accuracy ( Human Level Performance = 100% )
 - **Clear/Rain/Snow**: 92.0% accuracy ( HLP = 96% )
-- **NoFog/Fog**: Not yet evaluated
+- **NoFog/Fog**: 100% accuracy on ACDC, around 90% on BDD (not enough data to evaluate)
   
 Here is the Clear/Rain/Snow confusion matrix
 
