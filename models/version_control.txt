@@ -1,7 +1,0 @@
-ACDC Validation set:
-    -NightCNN: 99.5%
-    -PrecipitationCNN: 94.6%
-    -FogCNN: 100%
-
-BDD Test set:
-    -NightCNN: 94.8%
