@@ -1,6 +1,34 @@
 name,weather,fog
-clear_example.jpg,clear,no_fog
-fog_example.jpg,rain,fog
-night_example.jpg,night,no_fog
-rain_example.jpg,rain,no_fog
-snow_example.jpg,snow,fog
+bdd_clear.jpg,clear,no_fog
+bdd_fog.jpg,rain,fog
+bdd_night.jpg,night,no_fog
+bdd_rain.jpg,rain,no_fog
+bdd_snow.jpg,snow,fog
+mapillary_clear (1).jpg,clear,fog
+mapillary_clear (2).jpg,clear,no_fog
+mapillary_clear (3).jpg,clear,no_fog
+mapillary_clear (4).jpg,clear,no_fog
+mapillary_clear (5).jpg,clear,no_fog
+mapillary_clear (6).jpg,snow,fog
+mapillary_clear (7).jpg,snow,fog
+mapillary_clear (8).jpg,rain,no_fog
+mapillary_fog.jpg,rain,no_fog
+mapillary_night.jpg,night,fog
+mapillary_rain (1).jpg,rain,no_fog
+mapillary_rain (2).jpg,clear,fog
+mapillary_rain (3).jpg,rain,no_fog
+mapillary_rain (4).jpg,rain,fog
+mapillary_rain (5).jpg,rain,no_fog
+mapillary_rain (6).jpg,rain,no_fog
+mapillary_snow (1).jpg,snow,fog
+mapillary_snow (2).jpg,snow,no_fog
+mapillary_snow (3).jpg,snow,fog
+mapillary_snow (4).jpg,snow,fog
+woodscape_clear (1).png,clear,no_fog
+woodscape_clear (10).png,clear,fog
+woodscape_clear (2).png,clear,no_fog
+woodscape_clear (5).png,night,no_fog
+woodscape_clear (6).png,clear,fog
+woodscape_clear (7).png,snow,fog
+woodscape_clear (8).png,snow,fog
+woodscape_clear (9).png,snow,no_fog
