@@ -30,7 +30,7 @@ On unseen datasets:
 - **Mapillary**: 73% accuracy on 19 images
 - **Valeo Woodscape**: 40% accuracy on 10 images
 
-This shows a very high training/serving skew that indicates that the models must be retrained on images captured in the same way as the inference images as images from different datasets are too far from each other (example: observe the differences between a bdd and a woodscape image in the folder "inference_images")
+This shows a very high training/serving skew that indicates that the models must be retrained on images captured in the same way as the inference images, as images from different datasets are too far from each other for a deep learning approach (example: observe the differences between a bdd and a woodscape image in the folder "inference_images"). Maybe a more robust, non-DL approach would have been enough.
 
 ## Setup
 - clone the repository
