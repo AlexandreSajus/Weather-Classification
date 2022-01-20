@@ -1,5 +1,5 @@
-# Valeo Weather Classification
-Classifying street-level images according to weather to help the training of autonomous vehicles for Valeo, a French automaker company
+# Weather Classification
+Classifying street-level images according to weather to help the training of autonomous vehicles. This work has been done as a student project for Valeo
 
 ![](media/acdc_example.png)
 
